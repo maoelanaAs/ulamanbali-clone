@@ -111,7 +111,7 @@ export default function RetreatsIntro() {
           <ul className="text-brand flex w-full flex-wrap items-center justify-center gap-x-5 gap-y-8">
             <li className="inline-block">
               <a
-                href="/retreats"
+                href="https://ulamanbali.com/retreats"
                 className="ui-underline-anim reverse btn-primary capitalize"
               >
                 Learn More

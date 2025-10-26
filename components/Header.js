@@ -1,6 +1,7 @@
 "use client";
 import React, { useState, useEffect, useRef } from "react";
 import { gsap } from "gsap";
+import Link from "next/link";
 
 export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -77,30 +78,36 @@ export default function Header() {
               </button>
               <ul className="space-x-9 xl:flex">
                 <li className="header-animation-target opacity-0">
-                  <a href="/rooms" className="ui-underline-anim">
+                  <Link
+                    href="https://ulamanbali.com/rooms"
+                    className="ui-underline-anim"
+                  >
                     Villas
-                  </a>
+                  </Link>
                 </li>
                 <li className="header-animation-target opacity-0">
-                  <a
+                  <Link
                     href="https://riversidespabyulaman.com/"
                     className="ui-underline-anim"
                   >
                     Spa
-                  </a>
+                  </Link>
                 </li>
                 <li className="header-animation-target opacity-0">
-                  <a
+                  <Link
                     href="https://earthbyulaman.com"
                     className="ui-underline-anim"
                   >
                     Dine
-                  </a>
+                  </Link>
                 </li>
                 <li className="header-animation-target opacity-0">
-                  <a href="/retreats" className="ui-underline-anim">
+                  <Link
+                    href="https://ulamanbali.com/retreats"
+                    className="ui-underline-anim"
+                  >
                     Retreats
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </nav>
@@ -111,7 +118,7 @@ export default function Header() {
           >
             <ul className="opacity-0 lg:opacity-100">
               <li>
-                <a
+                <Link
                   href="https://www.google.com/travel/search?q=ulaman%20bali&amp;g2lb=4814050%2C4874190%2C4893075%2C4965990%2C4969803%2C10210222%2C72248047%2C72248049%2C72277293%2C72302247%2C72317059%2C72406588%2C72414906%2C72421566%2C72462234%2C72470899%2C72471280%2C72472051%2C72473841%2C72481459%2C72485658%2C72486593%2C72494250%2C72499705%2C72513513%2C72536387%2C72549171%2C72569093%2C72570850%2C72602734%2C72616120%2C72619927%2C72620306%2C72620962%2C72634630%2C72648289%2C72653660%2C72658035%2C72661848%2C72662543%2C72671093%2C72673973&amp;hl=en-ID&amp;gl=id&amp;cs=1&amp;ssta=1&amp;ts=CAEaRwopEicyJTB4MmRkMjM5MjEzNjlkNTcxMzoweDg0ZjMzZTkzODU1NTBmZDQSGhIUCgcI6A8QCRgTEgcI6A8QCRgUGAEyAhAA&amp;qs=CAEyFENnc0kxSl9VcXJqU3pfbUVBUkFCOAJCCQnUD1WFkz7zhEIJCdQPVYWTPvOE&amp;ap=ugEHcmV2aWV3cw&amp;ictx=111&amp;ved=0CAAQ5JsGahcKEwiomPuP68GHAxUAAAAAHQAAAAAQCg"
                   rel="noopener noreferrer"
                   target="_blank"
@@ -134,10 +141,10 @@ export default function Header() {
                   </svg>
                   <span>&nbsp;/&nbsp;</span>
                   <span>742 Google Reviews</span>
-                </a>
+                </Link>
               </li>
               <li>
-                <a
+                <Link
                   href="https://www.tripadvisor.com/Hotel_Review-g608496-d21058098-Reviews-Ulaman_Eco_Luxury_Retreat-Tabanan_Bali.html"
                   rel="noopener noreferrer"
                   target="_blank"
@@ -160,14 +167,14 @@ export default function Header() {
                   </svg>
                   <span>&nbsp;/&nbsp;</span>
                   <span>295 Tripadvisor Reviews</span>
-                </a>
+                </Link>
               </li>
             </ul>
           </div> */}
         </div>
         <div className="flex flex-1 items-center justify-center">
           <div className="flex flex-1 items-center justify-center">
-            <a
+            <Link
               aria-current="page"
               href="/"
               className="router-link-active router-link-exact-active transition-opacity duration-300"
@@ -181,7 +188,7 @@ export default function Header() {
                   className="h-auto w-full"
                 />
               </figure>
-            </a>
+            </Link>
           </div>
         </div>
         <div className="flex flex-1 items-center justify-end xl:items-start">
@@ -226,159 +233,159 @@ export default function Header() {
                   style="opacity: 0;"
                 >
                   <span class="group-first:hidden">/</span>
-                  <a
+                  <Link
                     aria-current="page"
                     href="/"
                     class="router-link-active active active-class:opacity-50 transition-opacity duration-300 hover:opacity-50"
                   >
                     Home
-                  </a>
+                  </Link>
                 </li>
                 <li
                   class="menu-link group inline-block space-x-2.5 opacity-0 sm:space-x-3.5 lg:space-x-5"
                   style="opacity: 0;"
                 >
                   <span class="group-first:hidden">/</span>
-                  <a
-                    href="/rooms"
+                  <Link
+                    href="https://ulamanbali.com/rooms"
                     class="active-class:opacity-50 transition-opacity duration-300 hover:opacity-50"
                   >
                     Villas
-                  </a>
+                  </Link>
                 </li>
                 <li
                   class="menu-link group inline-block space-x-2.5 opacity-0 sm:space-x-3.5 lg:space-x-5"
                   style="opacity: 0;"
                 >
                   <span class="group-first:hidden">/</span>
-                  <a
-                    href="/packages-ulaman"
+                  <Link
+                    href="https://ulamanbali.com/packages-ulaman"
                     class="active-class:opacity-50 transition-opacity duration-300 hover:opacity-50"
                   >
                     Packages
-                  </a>
+                  </Link>
                 </li>
                 <li
                   class="menu-link group inline-block space-x-2.5 opacity-0 sm:space-x-3.5 lg:space-x-5"
                   style="opacity: 0;"
                 >
                   <span class="group-first:hidden">/</span>
-                  <a
+                  <Link
                     href="https://riversidespabyulaman.com/"
                     class="active-class:opacity-50 transition-opacity duration-300 hover:opacity-50"
                   >
                     Spa
-                  </a>
+                  </Link>
                 </li>
                 <li
                   class="menu-link group inline-block space-x-2.5 opacity-0 sm:space-x-3.5 lg:space-x-5"
                   style="opacity: 0;"
                 >
                   <span class="group-first:hidden">/</span>
-                  <a
-                    href="/retreats"
+                  <Link
+                    href="https://ulamanbali.com/retreats"
                     class="active-class:opacity-50 transition-opacity duration-300 hover:opacity-50"
                   >
                     Retreats
-                  </a>
+                  </Link>
                 </li>
                 <li
                   class="menu-link group inline-block space-x-2.5 opacity-0 sm:space-x-3.5 lg:space-x-5"
                   style="opacity: 0;"
                 >
                   <span class="group-first:hidden">/</span>
-                  <a
+                  <Link
                     href="https://earthbyulaman.com"
                     rel="noopener noreferrer"
                     target="_blank"
                     class="active-class:opacity-50 transition-opacity duration-300 hover:opacity-50"
                   >
                     Dine
-                  </a>
+                  </Link>
                 </li>
                 <li
                   class="menu-link group inline-block space-x-2.5 opacity-0 sm:space-x-3.5 lg:space-x-5"
                   style="opacity: 0;"
                 >
                   <span class="group-first:hidden">/</span>
-                  <a
-                    href="/activities"
+                  <Link
+                    href="https://ulamanbali.com/activities"
                     class="active-class:opacity-50 transition-opacity duration-300 hover:opacity-50"
                   >
                     Experiences
-                  </a>
+                  </Link>
                 </li>
                 <li
                   class="menu-link group inline-block space-x-2.5 opacity-0 sm:space-x-3.5 lg:space-x-5"
                   style="opacity: 0;"
                 >
                   <span class="group-first:hidden">/</span>
-                  <a
-                    href="/facilities"
+                  <Link
+                    href="https://ulamanbali.com/facilities"
                     class="active-class:opacity-50 transition-opacity duration-300 hover:opacity-50"
                   >
                     Facilities
-                  </a>
+                  </Link>
                 </li>
                 <li
                   class="menu-link group inline-block space-x-2.5 opacity-0 sm:space-x-3.5 lg:space-x-5"
                   style="opacity: 0;"
                 >
                   <span class="group-first:hidden">/</span>
-                  <a
-                    href="/blog"
+                  <Link
+                    href="https://ulamanbali.com/blog"
                     class="active-class:opacity-50 transition-opacity duration-300 hover:opacity-50"
                   >
                     Blog
-                  </a>
+                  </Link>
                 </li>
                 <li
                   class="menu-link group inline-block space-x-2.5 opacity-0 sm:space-x-3.5 lg:space-x-5"
                   style="opacity: 0;"
                 >
                   <span class="group-first:hidden">/</span>
-                  <a
-                    href="/testimonials"
+                  <Link
+                    href="https://ulamanbali.com/testimonials"
                     class="active-class:opacity-50 transition-opacity duration-300 hover:opacity-50"
                   >
                     Reviews
-                  </a>
+                  </Link>
                 </li>
                 <li
                   class="menu-link group inline-block space-x-2.5 opacity-0 sm:space-x-3.5 lg:space-x-5"
                   style="opacity: 0;"
                 >
                   <span class="group-first:hidden">/</span>
-                  <a
-                    href="/about"
+                  <Link
+                    href="https://ulamanbali.com/about"
                     class="active-class:opacity-50 transition-opacity duration-300 hover:opacity-50"
                   >
                     About
-                  </a>
+                  </Link>
                 </li>
                 <li
                   class="menu-link group inline-block space-x-2.5 opacity-0 sm:space-x-3.5 lg:space-x-5"
                   style="opacity: 0;"
                 >
                   <span class="group-first:hidden">/</span>
-                  <a
-                    href="/contact"
+                  <Link
+                    href="https://ulamanbali.com/contact"
                     class="active-class:opacity-50 transition-opacity duration-300 hover:opacity-50"
                   >
                     Contact
-                  </a>
+                  </Link>
                 </li>
                 <li
                   class="menu-link group inline-block space-x-2.5 opacity-0 sm:space-x-3.5 lg:space-x-5"
                   style="opacity: 0;"
                 >
                   <span class="group-first:hidden">/</span>
-                  <a
-                    href="/ulaman-map"
+                  <Link
+                    href="https://ulamanbali.com/ulaman-map"
                     class="active-class:opacity-50 transition-opacity duration-300 hover:opacity-50"
                   >
                     The Map
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </nav>
@@ -390,86 +397,86 @@ export default function Header() {
                   class="menu-link group inline-block space-x-3 opacity-0"
                   style="opacity: 0;"
                 >
-                  <a
+                  <Link
                     aria-current="page"
                     href="/"
                     class="router-link-active active active-class:opacity-50 transition-opacity duration-300 hover:opacity-50"
                   >
                     Home
-                  </a>
+                  </Link>
                 </li>
                 <li
                   class="menu-link group inline-block space-x-3 opacity-0"
                   style="opacity: 0;"
                 >
                   <span class="group-first:hidden">/</span>
-                  <a
-                    href="/rooms"
+                  <Link
+                    href="https://ulamanbali.com/rooms"
                     class="active-class:opacity-50 transition-opacity duration-300 hover:opacity-50"
                   >
                     Villas
-                  </a>
+                  </Link>
                 </li>
                 <li
                   class="menu-link group inline-block space-x-3 opacity-0"
                   style="opacity: 0;"
                 >
                   <span class="group-first:hidden">/</span>
-                  <a
-                    href="/packages-ulaman"
+                  <Link
+                    href="https://ulamanbali.com/packages-ulaman"
                     class="active-class:opacity-50 transition-opacity duration-300 hover:opacity-50"
                   >
                     Packages
-                  </a>
+                  </Link>
                 </li>
                 <li
                   class="menu-link group inline-block space-x-3 opacity-0"
                   style="opacity: 1;"
                 >
                   <span class="group-first:hidden">/</span>
-                  <a
+                  <Link
                     href="https://riversidespabyulaman.com/"
                     class="active-class:opacity-50 transition-opacity duration-300 hover:opacity-50"
                   >
                     Spa
-                  </a>
+                  </Link>
                 </li>
                 <li
                   class="menu-link group inline-block space-x-3 opacity-0"
                   style="opacity: 1;"
                 >
                   <span class="group-first:hidden">/</span>
-                  <a
-                    href="/retreats"
+                  <Link
+                    href="https://ulamanbali.com/retreats"
                     class="active-class:opacity-50 transition-opacity duration-300 hover:opacity-50"
                   >
                     Retreats
-                  </a>
+                  </Link>
                 </li>
                 <li
                   class="group menu-link inline-block space-x-3 pr-5 opacity-0"
                   style="opacity: 1;"
                 >
                   <span class="group-first:hidden">/</span>
-                  <a
+                  <Link
                     href="https://earthbyulaman.com"
                     rel="noopener noreferrer"
                     target="_blank"
                     class="active-class:opacity-50 transition-opacity duration-300 hover:opacity-50"
                   >
                     Dine
-                  </a>
+                  </Link>
                 </li>
                 <li
                   class="menu-link group inline-block space-x-3 opacity-0"
                   style="opacity: 1;"
                 >
-                  <a
-                    href="/activities"
+                  <Link
+                    href="https://ulamanbali.com/activities"
                     class="active-class:opacity-50 transition-opacity duration-300 hover:opacity-50"
                   >
                     Experiences
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </nav>
@@ -481,70 +488,70 @@ export default function Header() {
                   class="space-x-.5em menu-link group inline-block opacity-0"
                   style="opacity: 1;"
                 >
-                  <a
+                  <Link
                     href="https://wa.me/6281227142854"
                     rel="noopener noreferrer"
                     target="_blank"
                     class="active-class:opacity-50 transition-opacity duration-300 hover:opacity-50"
                   >
                     Whatsapp
-                  </a>
+                  </Link>
                 </li>
                 <li
                   class="space-x-.5em menu-link group inline-block opacity-0"
                   style="opacity: 1;"
                 >
                   <span class="group-first:hidden">/</span>
-                  <a
+                  <Link
                     href="https://www.google.com/maps/dir//Ulaman+Road,+Buwit,+Kediri,+Tabanan+Regency,+Bali+82121/@-8.5929565,115.048163,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x2dd23921369d5713:0x84f33e9385550fd4!2m2!1d115.1305649!2d-8.5929653?entry=ttu"
                     rel="noopener noreferrer"
                     target="_blank"
                     class="active-class:opacity-50 transition-opacity duration-300 hover:opacity-50"
                   >
                     Directions
-                  </a>
+                  </Link>
                 </li>
                 <li
                   class="space-x-.5em menu-link group inline-block opacity-0"
                   style="opacity: 1;"
                 >
                   <span class="group-first:hidden">/</span>
-                  <a
+                  <Link
                     href="https://www.tripadvisor.com/Hotel_Review-g608496-d21058098-Reviews-Ulaman_Eco_Luxury_Resort-Tabanan_Bali.html"
                     rel="noopener noreferrer"
                     target="_blank"
                     class="active-class:opacity-50 transition-opacity duration-300 hover:opacity-50"
                   >
                     TripAdvisor
-                  </a>
+                  </Link>
                 </li>
                 <li
                   class="space-x-.5em menu-link group inline-block opacity-0"
                   style="opacity: 1;"
                 >
                   <span class="group-first:hidden">/</span>
-                  <a
+                  <Link
                     href="https://www.instagram.com/ulamanbali"
                     rel="noopener noreferrer"
                     target="_blank"
                     class="active-class:opacity-50 transition-opacity duration-300 hover:opacity-50"
                   >
                     Instagram
-                  </a>
+                  </Link>
                 </li>
                 <li
                   class="space-x-.5em menu-link group inline-block opacity-0"
                   style="opacity: 1;"
                 >
                   <span class="group-first:hidden">/</span>
-                  <a
+                  <Link
                     href="https://www.facebook.com/UlamanBali/"
                     rel="noopener noreferrer"
                     target="_blank"
                     class="active-class:opacity-50 transition-opacity duration-300 hover:opacity-50"
                   >
                     Facebook
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </nav>
@@ -730,71 +737,71 @@ export default function Header() {
                   class="menu-link group inline-block space-x-3 opacity-0"
                   style="opacity: 1;"
                 >
-                  <a
-                    href="/facilities"
+                  <Link
+                    href="https://ulamanbali.com/facilities"
                     class="active-class:opacity-50 transition-opacity duration-300 hover:opacity-50"
                   >
                     Facilities
-                  </a>
+                  </Link>
                 </li>
                 <li
                   class="menu-link group inline-block space-x-3 opacity-0"
                   style="opacity: 1;"
                 >
                   <span class="group-first:hidden">/</span>
-                  <a
-                    href="/blog"
+                  <Link
+                    href="https://ulamanbali.com/blog"
                     class="active-class:opacity-50 transition-opacity duration-300 hover:opacity-50"
                   >
                     Blog
-                  </a>
+                  </Link>
                 </li>
                 <li
                   class="menu-link group inline-block space-x-3 opacity-0"
                   style="opacity: 1;"
                 >
                   <span class="group-first:hidden">/</span>
-                  <a
-                    href="/testimonials"
+                  <Link
+                    href="https://ulamanbali.com/testimonials"
                     class="active-class:opacity-50 transition-opacity duration-300 hover:opacity-50"
                   >
                     Reviews
-                  </a>
+                  </Link>
                 </li>
                 <li
                   class="group menu-link inline-block space-x-3 pr-5 opacity-0"
                   style="opacity: 1;"
                 >
                   <span class="group-first:hidden">/</span>
-                  <a
-                    href="/about"
+                  <Link
+                    href="https://ulamanbali.com/about"
                     class="active-class:opacity-50 transition-opacity duration-300 hover:opacity-50"
                   >
                     About
-                  </a>
+                  </Link>
                 </li>
                 <li
                   class="menu-link group inline-block space-x-3 opacity-0"
                   style="opacity: 1;"
                 >
-                  <a
-                    href="/contact"
+                  <Link
+                    href="https://ulamanbali.com/contact"
                     class="active-class:opacity-50 transition-opacity duration-300 hover:opacity-50"
                   >
                     Contact
-                  </a>
+                  </Link>
                 </li>
                 <li
                   class="menu-link group inline-block space-x-3 opacity-0"
                   style="opacity: 1;"
                 >
                   <span class="group-first:hidden">/</span>
-                  <a
-                    href="/ulaman-map"
+                  <Link
+                    href="https://ulamanbali.com/ulaman-map"
                     class="active-class:opacity-50 transition-opacity duration-300 hover:opacity-50"
                   >
                     The Map
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </nav>

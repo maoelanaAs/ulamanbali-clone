@@ -1,174 +1,125 @@
-# Front End Test – MINDIMEDIA
+﻿# **Front End Test – MINDIMEDIA (Ulaman Bali Clone)**
 
-Position: Front End Programmer
-Framework: Next.js 16
-Deployment: Vercel
+Ini adalah proyek kloning dari **ulamanbali.com** yang dibuat sebagai bagian dari tes Front End Programmer di Mind Interactive Media. Proyek ini dibangun menggunakan Next.js (App Router), Tailwind CSS, Flowbite React, dan GSAP untuk animasi.
 
-1. Project Overview
+Fokus utama proyek ini adalah mencapai kesamaan UI/UX minimal 80% dengan situs aslinya, memastikan performa yang cepat, menjaga struktur komponen yang rapi, dan responsif di berbagai perangkat.
 
-Project ini adalah hasil cloning dari ulamanbali.com, dibuat menggunakan Next.js, Tailwind CSS, Flowbite React, dan GSAP untuk animasi.
-Fokus utama: kesamaan UI/UX minimal 80%, performa cepat, struktur komponen rapi, dan responsif di berbagai perangkat.
+## **1\. Live Demo & Repository**
 
-2. Live Demo & Repository
+- **Live Demo:** https://ulamanbali-clone.vercel.app/
+- **GitHub Repo:** https://github.com/maoelanaAs/ulamanbali-clone
 
-Live Demo: https://yourproject.vercel.app
+## **2\. Tech Stack**
 
-GitHub Repo: https://github.com/yourusername/ulamanbali-clone
+- **Framework:** Next.js 16 (App Router)
+- **Library:** React 19
+- **Styling:** Tailwind CSS
+- **UI Components:** Flowbite & Flowbite React
+- **Animasi:** GSAP (GreenSock Animation Platform)
+- **Deployment:** Vercel
 
-3. Setup Instructions
-   Clone Repository
-   git clone https://github.com/yourusername/ulamanbali-clone.git
-   cd ulamanbali-clone
+## **3\. Setup & Instalasi**
 
-Install Dependencies
-npm install
+Ikuti langkah-langkah berikut untuk menjalankan proyek ini secara lokal:
 
-Run Development Server
-npm run dev
+**1\. Clone Repository**
 
-Buka http://localhost:3000 di browser.
+       git clone https://github.com/maoelanaAs/ulamanbali-clone.git
+       cd ulamanbali-clone
 
-Build for Production
-npm run build
-npm start
+**2\. Install Dependencies**
 
-Environment Variables
+       npm install
 
-Buat file .env.local jika dibutuhkan untuk variabel API di masa depan.
-Saat ini data bersifat statis (tidak menggunakan CMS atau API).
+**3\. Run Development Server**
 
-4. Tech Stack
+       npm run dev
 
-Next.js 16 (App Router)
+Buka http://localhost:3000 di browser Anda.
 
-React 19
+## **4\. Additional Questions & Answers**
 
-Tailwind CSS
+### **1\. Component Structure**
 
-Flowbite & Flowbite React untuk komponen UI
+Komponen dibagi berdasarkan fungsinya:
 
-GSAP untuk animasi
+- ui: elemen kecil seperti Button, Card, Modal.
+- layout: struktur besar seperti Header, Footer, Layout utama.
+- sections: blok halaman seperti Hero, About, Rooms.
 
-Vercel untuk deployment
+Tujuannya agar komponen reusable dan mudah dipelihara.
 
-5. Folder Structure
-   components/
-   ui/
-   layout/
-   sections/
-   pages/
-   api/
-   public/
-   styles/
+### **2\. State Management**
 
-Struktur ini menjaga komponen tetap modular, mudah diatur, dan mudah digunakan ulang.
+Gunakan **local state** (useState/useReducer) untuk komponen kecil.
 
-6. Additional Questions & Answers
-1. Component Structure
+### **3\. Responsive Strategy**
 
-Komponen dikelompokkan menjadi:
+Gunakan breakpoint Tailwind (sm, md, lg, xl).
+Gunakan unit relatif (rem, vw, vh).
+Gunakan layout fleksibel seperti grid dan flex agar proporsional di semua layar.
 
-ui: komponen kecil dan reusable (Button, Modal, Card).
+### **4\. Performance Optimization**
 
-layout: struktur utama (Header, Footer, Layout dasar).
+- Code splitting dan lazy loading dengan next/dynamic.
+- Optimasi gambar menggunakan next/image.
 
-sections: bagian halaman (Hero, Gallery, RoomList).
-Pendekatan ini menjaga proyek tetap mudah dipelihara.
+### **5\. Data Fetching (Local JSON)**
 
-2. State Management
+### **6\. API Integration**
 
-Gunakan local state (useState, useReducer) karena aplikasi bersifat statis.
-Tidak menggunakan global state seperti Redux atau Zustand karena belum dibutuhkan.
+Gunakan folder lib/api untuk semua request.
+Gunakan try/catch untuk error handling dan tampilkan fallback UI.
 
-3. Responsive Strategy
+### **7\. Content Structure**
 
-Gunakan Tailwind CSS breakpoints (sm, md, lg, xl).
+### **8\. Vercel Deployment**
 
-Gunakan grid dan flexbox untuk layout dinamis.
+Konfigurasi optimal:
 
-Unit relatif (rem, vw, vh) agar layout tetap proporsional.
+- next.config.js dengan pengaturan images.domains.
+- File vercel.json untuk redirect dan caching.
+- Build otomatis via GitHub setiap push ke main branch.
 
-4. Performance Optimization
+### **9\. Environment Setup**
 
-Gunakan next/image untuk optimasi gambar.
+Gunakan .env.local untuk development dan .env.production untuk produksi di Vercel.
+Variabel penting seperti API_URL dan TOKEN tidak ditulis di kode publik.
 
-Gunakan next/dynamic untuk lazy loading komponen berat.
+### **10\. Asset Optimization**
 
-Gunakan cache browser default Next.js.
+- Gambar dioptimalkan dengan next/image.
+- Font dari Google Fonts melalui next/font.
+- Asset statis disimpan di /public.
 
-Build menggunakan next build agar otomatis minify dan optimize.
+### **11\. API Design (Laravel Filament)**
 
-5. Data Fetching (Local JSON)
+Gunakan pola RESTful:
 
-Data statis disimpan dalam file JSON lokal.
-Struktur dirancang fleksibel agar mudah dikembangkan menjadi API.
+- GET /api/rooms
+- GET /api/facilities
+- POST /api/bookings
 
-{
-"rooms": [],
-"facilities": [],
-"gallery": []
-}
+Gunakan Laravel Resource untuk output JSON terstandar.
 
-6. API Integration
+### **12\. Content Modeling**
 
-Belum menggunakan API eksternal.
-Struktur project sudah siap untuk penambahan API di masa depan menggunakan folder lib/api atau pages/api.
+### **13\. Admin UX**
 
-7. Content Structure
+Fitur penting:
 
-Gunakan struktur sederhana dan konsisten:
+- Upload gambar drag-and-drop.
+- Live preview konten.
+- Filter dan pencarian.
+- Validasi sebelum publish.
 
-{
-"title": "Ocean View Suite",
-"description": "Kamar dengan pemandangan laut",
-"images": ["img1.jpg", "img2.jpg"]
-}
+### **14\. Code Organization**
 
-Struktur ini mudah diperluas untuk tipe konten baru.
+Struktur folder modular, gunakan alias @/ untuk import.
+Pisahkan logic dari tampilan agar mudah dikembangkan tim.
 
-8. Vercel Deployment
+### **15\. Error Handling**
 
-Hubungkan repository GitHub ke Vercel.
-
-Deploy otomatis setiap push ke branch main.
-
-next.config.mjs telah diatur untuk optimasi gambar dan output standalone.
-
-9. Environment Setup
-
-Gunakan .env.local untuk development dan .env.production untuk environment produksi di Vercel.
-Tidak ada variabel sensitif di project ini.
-
-10. Asset Optimization
-
-Gunakan next/image untuk semua gambar besar.
-
-Gunakan font dari Google Fonts melalui next/font.
-
-Semua asset statis disimpan di folder /public.
-
-11. Code Organization
-
-Gunakan alias @/ di jsconfig.json agar import lebih mudah.
-Pisahkan logic dari UI agar mudah diperluas.
-Gunakan Prettier dan ESLint untuk menjaga konsistensi kode.
-
-12. Error Handling
-
-Network Error: tampilkan fallback UI atau pesan error.
-
-Data Kosong: tampilkan placeholder.
-
-UI Error: gunakan ErrorBoundary (Next.js default).
-
-7. Focus & Evaluation
-
-Fokus pengembangan:
-
-Kemiripan UI/UX minimal 80%.
-
-Performa cepat dan ringan.
-
-Kode modular dan maintainable.
-
-Siap untuk dikembangkan dengan API atau CMS di masa depan.
+- **Network Error:** tampilkan notifikasi “Gagal memuat data, coba lagi.”
+- **Empty Data:** tampilkan placeholder.
+- **UI Error:** gunakan Error Boundary.

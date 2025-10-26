@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function RoomTypes() {
   return (
     <section className="space-y-10 sm:space-y-11 lg:space-y-16">
@@ -77,7 +79,7 @@ export default function RoomTypes() {
                   aria-roledescription="slide"
                   className="group min-w-0 shrink-0 grow-0 basis-auto pb-1 pl-4 last:pr-6 sm:pl-7"
                 >
-                  <a href="/rooms/floating-lake" className="">
+                  <Link href="https://ulamanbali.com/rooms/floating-lake">
                     <article className="-mr-7 pl-6 group-last:pr-6 sm:mr-0 sm:p-0">
                       <div className="w-88 space-y-4 lg:w-md">
                         <figure className="group relative aspect-10/14 overflow-hidden rounded-md xl:aspect-10/13">
@@ -91,7 +93,7 @@ export default function RoomTypes() {
                                   loading="lazy"
                                 />
                               </div>
-                              <div className="rounded-inherit h-full w-full overflow-hidden">
+                              <div className="rounded-inherit hidden h-full w-full overflow-hidden">
                                 <img
                                   src="https://images.prismic.io/ulaman/Zlbe8aWtHYXtT4Qk_lakevillabali.jpg?auto=format,compress"
                                   alt="bathroom lake villa"
@@ -99,7 +101,7 @@ export default function RoomTypes() {
                                   loading="eager"
                                 />
                               </div>
-                              <div className="rounded-inherit h-full w-full overflow-hidden">
+                              <div className="rounded-inherit hidden h-full w-full overflow-hidden">
                                 <img
                                   src="https://images.prismic.io/ulaman/Zlbe8KWtHYXtT4Qj_lakevilla2.jpg?auto=format,compress"
                                   alt="lake villa from inside"
@@ -177,14 +179,14 @@ export default function RoomTypes() {
                         </footer>
                       </div>
                     </article>
-                  </a>
+                  </Link>
                 </div>
                 <div
                   role="group"
                   aria-roledescription="slide"
                   className="group min-w-0 shrink-0 grow-0 basis-auto pb-1 pl-4 last:pr-6 sm:pl-7"
                 >
-                  <a href="/rooms/cocoon-jungle" className="">
+                  <Link href="https://ulamanbali.com/rooms/cocoon-jungle">
                     <article className="-mr-7 pl-6 group-last:pr-6 sm:mr-0 sm:p-0">
                       <div className="w-88 space-y-4 lg:w-md">
                         <figure className="group relative aspect-10/14 overflow-hidden rounded-md xl:aspect-10/13">
@@ -198,7 +200,7 @@ export default function RoomTypes() {
                                   loading="lazy"
                                 />
                               </div>
-                              <div className="rounded-inherit h-full w-full overflow-hidden">
+                              <div className="rounded-inherit hidden h-full w-full overflow-hidden">
                                 <img
                                   src="https://images.prismic.io/ulaman/ZjeopEMTzAJOCiqz_resorts-bali.jpg?auto=format,compress"
                                   alt="couple sitting on balcony of cocoon"
@@ -206,7 +208,7 @@ export default function RoomTypes() {
                                   loading="eager"
                                 />
                               </div>
-                              <div className="rounded-inherit h-full w-full overflow-hidden">
+                              <div className="rounded-inherit hidden h-full w-full overflow-hidden">
                                 <img
                                   src="https://images.prismic.io/ulaman/ZjeookMTzAJOCiqx_hotel-indonesia.jpg?auto=format,compress"
                                   alt="inside of cocoon upper deluxe"
@@ -214,7 +216,7 @@ export default function RoomTypes() {
                                   loading="lazy"
                                 />
                               </div>
-                              <div className="rounded-inherit h-full w-full overflow-hidden">
+                              <div className="rounded-inherit hidden h-full w-full overflow-hidden">
                                 <img
                                   src="https://images.prismic.io/ulaman/ZjHZjEMTzAJOCdgU_ulaman.jpg?auto=format,compress"
                                   alt="cocoon bathroom"
@@ -293,14 +295,14 @@ export default function RoomTypes() {
                         </footer>
                       </div>
                     </article>
-                  </a>
+                  </Link>
                 </div>
                 <div
                   role="group"
                   aria-roledescription="slide"
                   className="group min-w-0 shrink-0 grow-0 basis-auto pb-1 pl-4 last:pr-6 sm:pl-7"
                 >
-                  <a href="/rooms/avatar-tree-house" className="">
+                  <Link href="https://ulamanbali.com/rooms/avatar-tree-house">
                     <article className="-mr-7 pl-6 group-last:pr-6 sm:mr-0 sm:p-0">
                       <div className="w-88 space-y-4 lg:w-md">
                         <figure className="group relative aspect-10/14 overflow-hidden rounded-md xl:aspect-10/13">
@@ -314,7 +316,7 @@ export default function RoomTypes() {
                                   loading="lazy"
                                 />
                               </div>
-                              <div className="rounded-inherit h-full w-full overflow-hidden">
+                              <div className="rounded-inherit hidden h-full w-full overflow-hidden">
                                 <img
                                   src="https://images.prismic.io/ulaman/ZjejSkMTzAJOCioK_bali-hotels.jpg?auto=format,compress"
                                   alt="inside the room of sky villa"
@@ -322,7 +324,7 @@ export default function RoomTypes() {
                                   loading="lazy"
                                 />
                               </div>
-                              <div className="rounded-inherit h-full w-full overflow-hidden">
+                              <div className="rounded-inherit hidden h-full w-full overflow-hidden">
                                 <img
                                   src="https://images.prismic.io/ulaman/ZlbjEqWtHYXtT4TY_skyvillabathroom.jpg?auto=format,compress"
                                   alt="sky villa bathroom"
@@ -401,14 +403,14 @@ export default function RoomTypes() {
                         </footer>
                       </div>
                     </article>
-                  </a>
+                  </Link>
                 </div>
                 <div
                   role="group"
                   aria-roledescription="slide"
                   className="group min-w-0 shrink-0 grow-0 basis-auto pb-1 pl-4 last:pr-6 sm:pl-7"
                 >
-                  <a href="/rooms/grand-lagoon-private-pool" className="">
+                  <Link href="https://ulamanbali.com/rooms/grand-lagoon-private-pool">
                     <article className="-mr-7 pl-6 group-last:pr-6 sm:mr-0 sm:p-0">
                       <div className="w-88 space-y-4 lg:w-md">
                         <figure className="group relative aspect-10/14 overflow-hidden rounded-md xl:aspect-10/13">
@@ -422,7 +424,7 @@ export default function RoomTypes() {
                                   loading="lazy"
                                 />
                               </div>
-                              <div className="rounded-inherit h-full w-full overflow-hidden">
+                              <div className="rounded-inherit hidden h-full w-full overflow-hidden">
                                 <img
                                   src="https://images.prismic.io/ulaman/Zj16UkMTzAJOCrGd_hotels-in-bali.jpg?auto=format,compress"
                                   alt="grand lagoon villa drone shot"
@@ -430,7 +432,7 @@ export default function RoomTypes() {
                                   loading="lazy"
                                 />
                               </div>
-                              <div className="rounded-inherit h-full w-full overflow-hidden">
+                              <div className="rounded-inherit hidden h-full w-full overflow-hidden">
                                 <img
                                   src="https://images.prismic.io/ulaman/Zj16TkMTzAJOCrGY_eco-luxury-resort-indonesia.jpg?auto=format,compress"
                                   alt="the living area of grand lagoon"
@@ -438,7 +440,7 @@ export default function RoomTypes() {
                                   loading="lazy"
                                 />
                               </div>
-                              <div className="rounded-inherit h-full w-full overflow-hidden">
+                              <div className="rounded-inherit hidden h-full w-full overflow-hidden">
                                 <img
                                   src="https://images.prismic.io/ulaman/Zoor6h5LeNNTw3wE_ulaman.jpg?auto=format,compress"
                                   alt="grand-lagoon"
@@ -518,7 +520,7 @@ export default function RoomTypes() {
                         </footer>
                       </div>
                     </article>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>

@@ -146,7 +146,7 @@ export default function ExperienceCatalogs() {
             </div>
             <nav className="text-center">
               <a
-                href="/activities"
+                href="https://ulamanbali.com/activities"
                 className="btn-primary ui-underline-anim reverse"
               >
                 Discover All Experiences

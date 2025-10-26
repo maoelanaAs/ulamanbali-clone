@@ -1,15 +1,17 @@
+import Link from "next/link";
+
 export default function Footer() {
   return (
     <footer className="mt-36 sm:mt-28 lg:mt-40 xl:mt-36">
       <article className="space-y-6 pb-2 lg:space-y-9 lg:pb-2.5 xl:pb-3">
         <header className="text-primary text-center leading-none font-normal">
-          <a
+          <Link
             href="https://www.instagram.com/ulamanbali/"
             rel="noopener noreferrer"
             target="_blank"
           >
             @ulamanbali
-          </a>
+          </Link>
         </header>
         <div>
           <div
@@ -32,7 +34,7 @@ export default function Footer() {
               <div className="flex flex-col items-center justify-center">
                 <ul className="flex flex-col items-center gap-y-3">
                   <li>
-                    <a
+                    <Link
                       href="https://www.google.com/travel/search?q=ulaman%20bali&amp;g2lb=4814050%2C4874190%2C4893075%2C4965990%2C4969803%2C10210222%2C72248047%2C72248049%2C72277293%2C72302247%2C72317059%2C72406588%2C72414906%2C72421566%2C72462234%2C72470899%2C72471280%2C72472051%2C72473841%2C72481459%2C72485658%2C72486593%2C72494250%2C72499705%2C72513513%2C72536387%2C72549171%2C72569093%2C72570850%2C72602734%2C72616120%2C72619927%2C72620306%2C72620962%2C72634630%2C72648289%2C72653660%2C72658035%2C72661848%2C72662543%2C72671093%2C72673973&amp;hl=en-ID&amp;gl=id&amp;cs=1&amp;ssta=1&amp;ts=CAEaRwopEicyJTB4MmRkMjM5MjEzNjlkNTcxMzoweDg0ZjMzZTkzODU1NTBmZDQSGhIUCgcI6A8QCRgTEgcI6A8QCRgUGAEyAhAA&amp;qs=CAEyFENnc0kxSl9VcXJqU3pfbUVBUkFCOAJCCQnUD1WFkz7zhEIJCdQPVYWTPvOE&amp;ap=ugEHcmV2aWV3cw&amp;ictx=111&amp;ved=0CAAQ5JsGahcKEwiomPuP68GHAxUAAAAAHQAAAAAQCg"
                       rel="noopener noreferrer"
                       target="_blank"
@@ -57,10 +59,10 @@ export default function Footer() {
                       </span>
                       <span>/</span>
                       <span className="opacity-50">742 Google Reviews</span>
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a
+                    <Link
                       href="https://www.tripadvisor.com/Hotel_Review-g608496-d21058098-Reviews-Ulaman_Eco_Luxury_Retreat-Tabanan_Bali.html"
                       rel="noopener noreferrer"
                       target="_blank"
@@ -87,7 +89,7 @@ export default function Footer() {
                       <span className="opacity-50">
                         295 TripAdvisor Reviews
                       </span>
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </div>
@@ -260,74 +262,101 @@ export default function Footer() {
                   <h6 className="display-6 text-secondary">Explore</h6>
                   <ul className="grid grid-cols-2 gap-x-12 gap-y-5 pt-7">
                     <li>
-                      <a
+                      <Link
                         aria-current="page"
                         href="/"
                         className="router-link-active ui-underline-anim before:scale-x-100"
                       >
                         Home
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a href="/rooms" className="ui-underline-anim">
+                      <Link
+                        href="https://ulamanbali.com/rooms"
+                        className="ui-underline-anim"
+                      >
                         Villas
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a
+                      <Link
                         href="https://earthbyulaman.com/"
                         className="ui-underline-anim"
                       >
                         Dining
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a
+                      <Link
                         href="https://riversidespabyulaman.com/"
                         className="ui-underline-anim"
                       >
                         Spa
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a href="/retreats" className="ui-underline-anim">
+                      <Link
+                        href="https://ulamanbali.com/retreats"
+                        className="ui-underline-anim"
+                      >
                         Retreats
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a href="/activities" className="ui-underline-anim">
+                      <Link
+                        href="https://ulamanbali.com/activities"
+                        className="ui-underline-anim"
+                      >
                         Experiences
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a href="/facilities" className="ui-underline-anim">
+                      <Link
+                        href="https://ulamanbali.com/facilities"
+                        className="ui-underline-anim"
+                      >
                         Facilities
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a href="/ulaman-map" className="ui-underline-anim">
+                      <Link
+                        href="https://ulamanbali.com/ulaman-map"
+                        className="ui-underline-anim"
+                      >
                         Ulaman Map
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a href="/about" className="ui-underline-anim">
+                      <Link
+                        href="https://ulamanbali.com/about"
+                        className="ui-underline-anim"
+                      >
                         About
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a href="/blog" className="ui-underline-anim">
+                      <Link
+                        href="https://ulamanbali.com/blog"
+                        className="ui-underline-anim"
+                      >
                         Articles
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a href="/contact" className="ui-underline-anim">
+                      <Link
+                        href="https://ulamanbali.com/contact"
+                        className="ui-underline-anim"
+                      >
                         Contact
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a href="/testimonials" className="ui-underline-anim">
+                      <Link
+                        href="https://ulamanbali.com/testimonials"
+                        className="ui-underline-anim"
+                      >
                         Video Testimonials
-                      </a>
+                      </Link>
                     </li>
                   </ul>
                 </nav>
@@ -335,54 +364,54 @@ export default function Footer() {
                   <h6 className="display-6 text-secondary">Connect</h6>
                   <ul className="grid grid-cols-2 gap-x-12 gap-y-5 pt-7">
                     <li>
-                      <a
+                      <Link
                         href="https://wa.me/6281227142854"
                         rel="noopener noreferrer"
                         target="_blank"
                         className="ui-underline-anim"
                       >
                         Whatsapp
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a
+                      <Link
                         href="https://www.google.com/maps/dir//Ulaman+Road,+Buwit,+Kediri,+Tabanan+Regency,+Bali+82121/@-8.5929565,115.048163,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x2dd23921369d5713:0x84f33e9385550fd4!2m2!1d115.1305649!2d-8.5929653?entry=ttu"
                         rel="noopener noreferrer"
                         target="_blank"
                         className="ui-underline-anim"
                       >
                         Directions
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a
+                      <Link
                         href="https://www.tripadvisor.com/Hotel_Review-g608496-d21058098-Reviews-Ulaman_Eco_Luxury_Resort-Tabanan_Bali.html"
                         rel="noopener noreferrer"
                         target="_blank"
                         className="ui-underline-anim"
                       >
                         TripAdvisor
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a
+                      <Link
                         href="https://www.instagram.com/ulamanbali"
                         rel="noopener noreferrer"
                         target="_blank"
                         className="ui-underline-anim"
                       >
                         Instagram
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a
+                      <Link
                         href="https://www.facebook.com/UlamanBali/"
                         rel="noopener noreferrer"
                         target="_blank"
                         className="ui-underline-anim"
                       >
                         Facebook
-                      </a>
+                      </Link>
                     </li>
                   </ul>
                 </nav>
@@ -594,28 +623,28 @@ export default function Footer() {
             <nav>
               <ul className="flex flex-row flex-wrap justify-between gap-x-1 gap-y-4">
                 <li>
-                  <a
-                    href="/legal/terms"
+                  <Link
+                    href="https://ulamanbali.com/legal/terms"
                     className="text-smallest ui-underline-anim"
                   >
                     Terms
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
-                    href="/legal/privacy-policy"
+                  <Link
+                    href="https://ulamanbali.com/legal/privacy-policy"
                     className="text-smallest ui-underline-anim"
                   >
                     Privacy
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
-                    href="/contact/ulaman-bookings"
+                  <Link
+                    href="https://ulamanbali.com/contact/ulaman-bookings"
                     className="text-smallest ui-underline-anim"
                   >
                     Ulaman Bookings
-                  </a>
+                  </Link>
                 </li>
 
                 <li>
@@ -631,7 +660,7 @@ export default function Footer() {
                   </span>
                 </li>
                 <li className="order-3">
-                  <a
+                  <Link
                     href="https://www.twomoonsstudio.com"
                     target="_blank"
                     className="text-smallest no-heart-color ui-underline-anim"
@@ -639,7 +668,7 @@ export default function Footer() {
                     {" "}
                     Made With ❤︎ By{" "}
                     <span className="opacity-100">Two Moons Studio</span>
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </nav>
