@@ -4,7 +4,7 @@ import "flowbite";
 import Link from "next/link";
 export default function AboutUs() {
   return (
-    <section className="container mx-auto px-32">
+    <section className="app-container">
       <div className="flex flex-col gap-10 sm:flex-row sm:items-center sm:gap-11 lg:justify-between lg:gap-20 xl:gap-32">
         <div className="w-full items-center xl:max-w-lg">
           <div className="aspect-10/13 sm:aspect-10/14">

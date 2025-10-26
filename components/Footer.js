@@ -29,7 +29,7 @@ export default function Footer() {
 
       <div className="bg-accent text-secondary">
         <div className="py-20 xl:py-16">
-          <div className="container mx-auto px-32">
+          <div className="app-container">
             <section className="pt-20">
               <div className="flex flex-col items-center justify-center">
                 <ul className="flex flex-col items-center gap-y-3">
@@ -95,7 +95,7 @@ export default function Footer() {
               </div>
             </section>
             <div className="py-20">
-              <div className="container mx-auto flex w-full max-w-3xl flex-col space-y-8 overflow-visible px-32 sm:flex-row sm:justify-center md:mx-auto md:space-y-0 md:px-0">
+              <div className="app-container flex w-full max-w-3xl flex-col space-y-8 overflow-visible sm:flex-row sm:justify-center md:mx-auto md:space-y-0 md:px-0">
                 <div className="border-secondary flex cursor-pointer items-center justify-between rounded-none pb-6 sm:w-1/3 sm:justify-start sm:border-r sm:pb-0">
                   <div className="relative h-min">
                     <span>Check In</span>
@@ -619,7 +619,7 @@ export default function Footer() {
               </div>
             </div>
           </section>
-          <footer className="container mx-auto px-32 pt-20">
+          <footer className="app-container pt-20">
             <nav>
               <ul className="flex flex-row flex-wrap justify-between gap-x-1 gap-y-4">
                 <li>
@@ -688,7 +688,7 @@ export default function Footer() {
                 <span>3 days 2 nights</span>
               </button>
             </li>
-            <li className="flex gap-x-9">
+            <li className="flex hidden gap-x-9">
               <div>
                 <span className="inline-block aspect-square w-2 rounded-full bg-current"></span>
               </div>
@@ -699,7 +699,7 @@ export default function Footer() {
               </button>
             </li>
           </ul>
-          <div className="absolute left-full flex gap-x-9 pl-9 xl:gap-x-10 xl:pl-10">
+          <div className="absolute left-full flex hidden gap-x-9 pl-9 xl:gap-x-10 xl:pl-10">
             <ul className="flex w-max justify-between gap-x-9 xl:gap-x-10">
               <li className="flex gap-x-9">
                 <div>

@@ -1,6 +1,6 @@
 export default function CtaBook() {
   return (
-    <section className="container mx-auto px-32">
+    <section className="app-container">
       <div className="mx-auto max-w-125 space-y-5 sm:space-y-6 lg:max-w-160 xl:space-y-5">
         <div className="space-y-em text-center" id="cta-4-text-block">
           <h4 className="heading display-4">

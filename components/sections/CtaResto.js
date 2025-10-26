@@ -1,6 +1,6 @@
 export default function CtaResto() {
   return (
-    <section className="container mx-auto -mb-18 px-32 sm:-mb-14 lg:-mb-20 xl:-mb-18!">
+    <section className="app-container -mb-18 sm:-mb-14 lg:-mb-20 xl:-mb-18!">
       <div className="mx-auto max-w-125 space-y-5 sm:space-y-6 lg:max-w-160 xl:space-y-5">
         <div className="space-y-em text-center" id="cta-9-text-block">
           <h4 className="heading display-4">

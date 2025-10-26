@@ -55,7 +55,7 @@ export default function RetreatsIntro() {
 
   return (
     <section ref={sectionRef} className="[&amp;+*]:!mt-0 mt-28!">
-      <div className="aspect-screen relative container mx-auto flex w-full max-w-screen items-center justify-center overflow-hidden px-32 sm:aspect-auto sm:min-h-[90vh] xl:max-w-none">
+      <div className="aspect-screen app-container relative flex w-full max-w-screen items-center justify-center overflow-hidden sm:aspect-auto sm:min-h-[90vh] xl:max-w-none">
         <div className="pointer-events-none absolute z-10 flex h-full w-full items-center justify-center py-14 2xl:py-0">
           <figure
             ref={figure1Ref}

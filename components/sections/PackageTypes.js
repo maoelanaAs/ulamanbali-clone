@@ -14,7 +14,7 @@ export default function PackageTypes() {
           </div>
         </div>
       </header>
-      <section className="pr-0! sm:container sm:max-w-none sm:px-32">
+      <section className="sm:app-container pr-0! sm:max-w-none">
         <div
           className="relative flex items-center outline-none sm:gap-9 lg:gap-20 2xl:gap-52"
           role="region"

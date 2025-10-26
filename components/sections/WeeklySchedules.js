@@ -265,7 +265,7 @@ export default function WeeklySchedules() {
                 </div>
               </div>
             </div>
-            <footer className="text-smaller container mx-auto mt-10 flex justify-between px-32 sm:mt-11 lg:mt-10">
+            <footer className="text-smaller app-container mt-10 flex justify-between sm:mt-11 lg:mt-10">
               <nav>
                 <a
                   href="https://drive.google.com/file/d/1HOiTV2UmmH4joOGKhwJhYdPIeN3Y9NfK/view"

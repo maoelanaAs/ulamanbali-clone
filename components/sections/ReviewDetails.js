@@ -7,7 +7,7 @@ export default function ReviewDetails() {
         aria-roledescription="carousel"
         tabIndex="0"
       >
-        <header className="container mx-auto px-32">
+        <header className="app-container">
           <div className="space-y-9 border-b pb-8 sm:flex sm:items-start sm:justify-between sm:space-y-0">
             <div className="space-y-8">
               <div>
@@ -125,7 +125,7 @@ export default function ReviewDetails() {
               aria-roledescription="slide"
               className="[&amp;.is-snapped]:opacity-100 is-snapped is-in-view min-w-0 shrink-0 grow-0 basis-full pl-4 transition-opacity duration-500"
             >
-              <article className="container mx-auto space-y-5 px-32 pt-11 sm:flex sm:justify-between sm:gap-14 sm:space-y-0 xl:gap-44">
+              <article className="app-container space-y-5 pt-11 sm:flex sm:justify-between sm:gap-14 sm:space-y-0 xl:gap-44">
                 <header className="grid grid-cols-[1fr_auto] gap-4 sm:grid-cols-[auto_auto] sm:grid-rows-[auto_1fr] sm:gap-x-11 sm:gap-y-2.5 xl:gap-x-36">
                   <h3 className="display-6 text-accent sm:text-vw-sm lg:text-largest order-first col-span-1 sm:order-0">
                     Alsana Trawally

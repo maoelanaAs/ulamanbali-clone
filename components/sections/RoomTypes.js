@@ -3,7 +3,7 @@ import Link from "next/link";
 export default function RoomTypes() {
   return (
     <section className="space-y-10 sm:space-y-11 lg:space-y-16">
-      <header className="container mx-auto px-32">
+      <header className="app-container">
         <div className="mx-auto max-w-125 space-y-5 sm:space-y-6 lg:max-w-160 xl:space-y-5">
           <div
             className="space-y-em text-center"
@@ -16,7 +16,7 @@ export default function RoomTypes() {
           </div>
         </div>
       </header>
-      <section className="pr-0! sm:container sm:max-w-none sm:px-32">
+      <section className="sm:app-container pr-0! sm:max-w-none">
         <div
           className="relative flex outline-none sm:gap-9 lg:gap-20 2xl:gap-52"
           role="region"

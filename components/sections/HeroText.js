@@ -1,6 +1,6 @@
 export const HeroText = () => {
   return (
-    <section className="container mx-auto px-32">
+    <section className="app-container">
       <div className="mx-auto max-w-152 space-y-5 sm:space-y-6 xl:max-w-176 xl:space-y-5">
         <div className="space-y-em text-center" id="cta-1-text-block">
           <h2 className="heading display-2">

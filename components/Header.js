@@ -55,7 +55,7 @@ export default function Header() {
       ref={headerRef}
     >
       <div
-        className={`pointer-events-auto relative z-50 container flex py-2 transition-[background] duration-300 sm:py-4 lg:items-center lg:justify-between lg:px-8 xl:max-w-none xl:px-10 ${
+        className={`app-container pointer-events-auto relative z-50 flex py-2 transition-[background] duration-300 sm:py-4 lg:items-center lg:justify-between lg:px-8 xl:max-w-none xl:px-10 ${
           isScrolled
             ? "text-primary bg-secondary border-b-[0.9px]"
             : "text-secondary bg-transparent"
@@ -76,7 +76,7 @@ export default function Header() {
                   data-v-241a1fe1=""
                 ></div>
               </button>
-              <ul className="space-x-9 xl:flex">
+              <ul className="hidden space-x-9 xl:flex">
                 <li className="header-animation-target opacity-0">
                   <Link
                     href="https://ulamanbali.com/rooms"
