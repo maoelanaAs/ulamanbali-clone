@@ -1,26 +1,180 @@
 @import "tailwindcss";
+@plugin "flowbite-react/plugin/tailwindcss";
+@source "../.flowbite-react/class-list.json";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@theme {
+  --color-primary: #c69c4d;
+  --color-secondary: #efebe2;
+  --color-accent: #606d61;
+
+  --font-americana: var(--font-americana);
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@layer base {
+  body {
+    font-family: var(--font-basisGrotesquePro);
+    font-weight: 300;
+    color: var(--color-accent);
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+@layer components {
+  .btn-primary {
+    @apply text-primary leading-none font-normal;
+  }
+
+  .ui-underline-anim {
+    @apply relative inline-block pt-1 pb-1;
+  }
+
+  .ui-underline-anim::before {
+    @apply absolute bottom-0 left-0 h-[1.2px] w-full bg-current opacity-70 content-[''];
+    @apply origin-left scale-x-0 transition-transform duration-500 ease-in-out;
+  }
+
+  .ui-underline-anim:hover::before {
+    @apply origin-right scale-x-100;
+  }
+
+  .ui-underline-anim.reverse {
+    @apply text-sm tracking-wider uppercase;
+  }
+
+  .ui-underline-anim.reverse::before {
+    @apply origin-right scale-x-100;
+  }
+
+  .ui-underline-anim.reverse:hover::before {
+    @apply origin-left scale-x-0;
+  }
+
+  .glass {
+    @apply bg-primary/80 backdrop-blur-xl;
+  }
+
+  .rounded-asymetrical {
+    @apply flex items-center justify-center rounded-tl-lg rounded-br-lg border border-current;
+  }
+
+  a.rounded-asymetrical,
+  button.rounded-asymetrical {
+    @apply rounded-tl-md rounded-br-md;
+  }
+
+  .aspect-screen {
+    @apply aspect-9/18 sm:aspect-[10/13.5] lg:aspect-17/10;
+  }
+
+  .display-1,
+  .display-2,
+  .display-3,
+  .display-4,
+  .display-5,
+  .display-6 {
+    @apply font-americana text-primary;
+  }
+
+  .display-1 {
+    @apply text-[2.5rem] leading-tight sm:text-[2.8125rem] lg:text-[3.125rem] landscape:text-[3.125rem];
+  }
+
+  .display-2 {
+    @apply text-3xl leading-tight sm:text-[2.1875rem] lg:text-[2.5rem] landscape:text-[2.5rem];
+  }
+
+  .display-3 {
+    @apply text-[1.75rem] leading-snug sm:text-[1.625rem] lg:text-[2.1875rem] landscape:text-[2.1875rem];
+  }
+
+  .display-4 {
+    @apply text-[1.75rem] leading-snug sm:text-[1.625rem] lg:text-3xl landscape:text-3xl;
+  }
+
+  .display-5 {
+    @apply text-2xl leading-snug sm:text-xl lg:text-2xl xl:text-[1.625rem] landscape:text-[1.625rem];
+  }
+
+  .display-6 {
+    @apply text-xl leading-snug sm:text-lg lg:text-xl landscape:text-xl;
+  }
+
+  .badge {
+    @apply inline-block rounded px-3 py-2 text-[.8125rem] leading-none;
+  }
+
+  .floating-element-decoration {
+    @apply relative before:absolute before:-top-2 before:-left-2 before:h-64 before:w-[219px] before:overflow-visible before:rounded-md before:bg-[rgba(195,145,50,.4)] before:content-[''];
+  }
+}
+
+@layer utilities {
+  .text-24 {
+    font-size: 1.5rem;
+  }
+
+  .text-26 {
+    font-size: 1.625rem;
+  }
+
+  .text-30 {
+    font-size: 1.875rem;
+  }
+
+  .text-40 {
+    font-size: 2.5rem;
+  }
+
+  .text-50 {
+    font-size: 3.125rem;
+  }
+
+  .text-90 {
+    font-size: 5.625rem;
+  }
+
+  .text-large {
+    font-size: 1.0625rem;
+  }
+
+  .text-larger {
+    font-size: 1.125rem;
+  }
+
+  .text-small {
+    font-size: 0.9375rem;
+  }
+
+  .text-smaller {
+    font-size: 0.875rem;
+  }
+
+  .text-smallest {
+    font-size: 0.8125rem;
+  }
+
+  .text-tiny {
+    font-size: 0.6875rem;
+  }
+}
+
+.lines[data-v-241a1fe1]:after,
+.lines[data-v-241a1fe1]:before {
+  background-color: currentColor;
+  content: "";
+  height: 0.8px;
+  position: absolute;
+  transition-duration: 0.3s;
+  transition-property: background-color, transform, width, top, bottom;
+}
+
+.active .lines[data-v-241a1fe1]:before {
+  top: 50%;
+  transform: rotate(25deg);
+  width: 100%;
+}
+
+.active .lines[data-v-241a1fe1]:after {
+  bottom: 50%;
+  transform: rotate(-25deg);
+  width: 100%;
 }

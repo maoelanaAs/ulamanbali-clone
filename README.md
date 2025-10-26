@@ -1,36 +1,174 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Front End Test – MINDIMEDIA
 
-## Getting Started
+Position: Front End Programmer
+Framework: Next.js 16
+Deployment: Vercel
 
-First, run the development server:
+1. Project Overview
 
-```bash
+Project ini adalah hasil cloning dari ulamanbali.com, dibuat menggunakan Next.js, Tailwind CSS, Flowbite React, dan GSAP untuk animasi.
+Fokus utama: kesamaan UI/UX minimal 80%, performa cepat, struktur komponen rapi, dan responsif di berbagai perangkat.
+
+2. Live Demo & Repository
+
+Live Demo: https://yourproject.vercel.app
+
+GitHub Repo: https://github.com/yourusername/ulamanbali-clone
+
+3. Setup Instructions
+   Clone Repository
+   git clone https://github.com/yourusername/ulamanbali-clone.git
+   cd ulamanbali-clone
+
+Install Dependencies
+npm install
+
+Run Development Server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Buka http://localhost:3000 di browser.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+Build for Production
+npm run build
+npm start
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Environment Variables
 
-## Learn More
+Buat file .env.local jika dibutuhkan untuk variabel API di masa depan.
+Saat ini data bersifat statis (tidak menggunakan CMS atau API).
 
-To learn more about Next.js, take a look at the following resources:
+4. Tech Stack
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Next.js 16 (App Router)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+React 19
 
-## Deploy on Vercel
+Tailwind CSS
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Flowbite & Flowbite React untuk komponen UI
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+GSAP untuk animasi
+
+Vercel untuk deployment
+
+5. Folder Structure
+   components/
+   ui/
+   layout/
+   sections/
+   pages/
+   api/
+   public/
+   styles/
+
+Struktur ini menjaga komponen tetap modular, mudah diatur, dan mudah digunakan ulang.
+
+6. Additional Questions & Answers
+1. Component Structure
+
+Komponen dikelompokkan menjadi:
+
+ui: komponen kecil dan reusable (Button, Modal, Card).
+
+layout: struktur utama (Header, Footer, Layout dasar).
+
+sections: bagian halaman (Hero, Gallery, RoomList).
+Pendekatan ini menjaga proyek tetap mudah dipelihara.
+
+2. State Management
+
+Gunakan local state (useState, useReducer) karena aplikasi bersifat statis.
+Tidak menggunakan global state seperti Redux atau Zustand karena belum dibutuhkan.
+
+3. Responsive Strategy
+
+Gunakan Tailwind CSS breakpoints (sm, md, lg, xl).
+
+Gunakan grid dan flexbox untuk layout dinamis.
+
+Unit relatif (rem, vw, vh) agar layout tetap proporsional.
+
+4. Performance Optimization
+
+Gunakan next/image untuk optimasi gambar.
+
+Gunakan next/dynamic untuk lazy loading komponen berat.
+
+Gunakan cache browser default Next.js.
+
+Build menggunakan next build agar otomatis minify dan optimize.
+
+5. Data Fetching (Local JSON)
+
+Data statis disimpan dalam file JSON lokal.
+Struktur dirancang fleksibel agar mudah dikembangkan menjadi API.
+
+{
+"rooms": [],
+"facilities": [],
+"gallery": []
+}
+
+6. API Integration
+
+Belum menggunakan API eksternal.
+Struktur project sudah siap untuk penambahan API di masa depan menggunakan folder lib/api atau pages/api.
+
+7. Content Structure
+
+Gunakan struktur sederhana dan konsisten:
+
+{
+"title": "Ocean View Suite",
+"description": "Kamar dengan pemandangan laut",
+"images": ["img1.jpg", "img2.jpg"]
+}
+
+Struktur ini mudah diperluas untuk tipe konten baru.
+
+8. Vercel Deployment
+
+Hubungkan repository GitHub ke Vercel.
+
+Deploy otomatis setiap push ke branch main.
+
+next.config.mjs telah diatur untuk optimasi gambar dan output standalone.
+
+9. Environment Setup
+
+Gunakan .env.local untuk development dan .env.production untuk environment produksi di Vercel.
+Tidak ada variabel sensitif di project ini.
+
+10. Asset Optimization
+
+Gunakan next/image untuk semua gambar besar.
+
+Gunakan font dari Google Fonts melalui next/font.
+
+Semua asset statis disimpan di folder /public.
+
+11. Code Organization
+
+Gunakan alias @/ di jsconfig.json agar import lebih mudah.
+Pisahkan logic dari UI agar mudah diperluas.
+Gunakan Prettier dan ESLint untuk menjaga konsistensi kode.
+
+12. Error Handling
+
+Network Error: tampilkan fallback UI atau pesan error.
+
+Data Kosong: tampilkan placeholder.
+
+UI Error: gunakan ErrorBoundary (Next.js default).
+
+7. Focus & Evaluation
+
+Fokus pengembangan:
+
+Kemiripan UI/UX minimal 80%.
+
+Performa cepat dan ringan.
+
+Kode modular dan maintainable.
+
+Siap untuk dikembangkan dengan API atau CMS di masa depan.
