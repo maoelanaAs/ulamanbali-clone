@@ -1,6 +1,7 @@
 import "flowbite";
 import "flowbite/dist/flowbite.css";
 import "./globals.css";
+import { Analytics } from "@vercel/analytics/next";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import localFont from "next/font/local";
