@@ -1,11 +1,11 @@
 import "flowbite";
 import "flowbite/dist/flowbite.css";
 import "./globals.css";
-import { Analytics } from "@vercel/analytics/next";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import localFont from "next/font/local";
 import SmoothScroll from "@/components/SmoothScroll";
+import { Analytics } from "@vercel/analytics/next";
 
 const basisGrotesquePro = localFont({
   src: [
@@ -44,6 +44,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <Analytics />
       <body
         className={`${basisGrotesquePro.variable} ${americana.variable} bg-secondary antialiased`}
       >
